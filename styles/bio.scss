@@ -6,11 +6,10 @@ body{
 
 $footer_nav_background_color: #323232;
 
-@mixin tablet_spacing {
-    padding:36px 0px;
-    
-
-}
+/*@mixin tablet_spacing {
+    padding:36px 0;  
+   
+}*/
 
 @media (max-width:767px){
     .footer_text,
@@ -22,11 +21,13 @@ $footer_nav_background_color: #323232;
         padding-left: 16px;
         padding-right: 16px; 
     }
+
     .hero {
         background-size:auto;
         background-size: cover;
         background-repeat: no-repeat; 
     }
+
     .photo_gallery_image {
         width: 650px;
         height:500px;
@@ -35,9 +36,11 @@ $footer_nav_background_color: #323232;
         padding-left:16px;
         padding-right: 16px;
     } 
+
     .musician_header {
         font-size: 4rem;
     }
+
     .musician_image {
         width: 650px;
         height:500px;
@@ -58,45 +61,40 @@ $footer_nav_background_color: #323232;
     .footer_text {
         font-size: 2rem;
     }
+    
+
 }
 
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1279px){
     body{
         background: lightblue;
-
     }
-    @include tablet_spacing; 
+    .photo_gallery_images {
+        padding-left:36px;
+        padding-right:36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        font-family: Avenir;
+        margin:auto;
+        
+    }
+
+    /*@include tablet_spacing; */
 }
 
 /*Desktop*/
 @media (min-width: 1280px ) { 
-    body {
-         background: lightgreen;
-    }   
+     
     .photo_gallery_image{
           width: 30%;
           padding-bottom: 40px;
           margin-bottom:2%;
           margin: auto;
     }
-  }
-
-
-
-
-/*@mixin tablet {
-    @media screen and (min-width: $tablet-breakpoint) {
-       
-    }
-  }
-  
-  @mixin desktop {
-    @media screen and (min-width: $desktop-breakpoint) {
-      @content;
-    }
-  }*/
-
+}
 
 .bandsite_nav {
     background-color: $footer_nav_background_color;
@@ -105,15 +103,13 @@ $footer_nav_background_color: #323232;
     justify-content: flex-start;
     font-family: Avenir;
     padding-left: 30px;
-    align-items: center; 
+    align-items: center;
 }
 
 .bandsite_nav_content {
     font-family: Avenir;
     font-weight: lighter;
-    padding-left: 30px; 
-     
-    
+    padding-left: 30px;    
 }
 
 .hero {
@@ -144,11 +140,16 @@ $footer_nav_background_color: #323232;
     justify-content: center;
 }
 
+
+
 .musician_header{
     padding-left: 100px;
 }
-.musician_image {
-    
+
+
+.musician_text {
+    padding-left: 150px;
+    font-size: 25px;
 }
 
 .photo_gallery {
@@ -162,7 +163,8 @@ $footer_nav_background_color: #323232;
     padding-bottom: 30px;
     font-family: Avenir;
     margin: 16px;
-   
+    padding:auto;
+
 }
 
 /*.photo_gallery_image {
@@ -176,10 +178,9 @@ $footer_nav_background_color: #323232;
     color: black;
     padding: 30px;
     font-family: Avenir;
-
 }
 
-.Bees_Knees{
+.bees_knees{
     display: flex;
     margin: 60px;
 }
@@ -217,11 +218,32 @@ h2 {
 .musician_header {
     color: black;
     font-family: Avenir;
-    /*padding-left: 80px;*/
+}
 
-    
+.musician_image {
+    width: 850px;
+    height:auto;
+    display: flex;
+    justify-content: center;
 }
 
 
+.bees_knees_text_header {
+    padding-left: 150px;
+    font-size: 3rem;
+    
+}
 
+.bees_knees_container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bees_knees_text_content{
+    padding-left:150px;
+    padding-right:50px;
+    font-size: 25px;
+    margin-top: 30px;
+}
 
