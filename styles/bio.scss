@@ -6,10 +6,10 @@ body{
 
 $footer_nav_background_color: #323232;
 
-/*@mixin tablet_spacing {
+@mixin tablet_spacing {
     padding:36px 0;  
    
-}*/
+}
 
 @media (max-width:767px){
     .footer_text,
@@ -62,6 +62,9 @@ $footer_nav_background_color: #323232;
         font-size: 2rem;
     }
     
+    .footer__bandsite__label--desktop-tablet {
+        display: none;
+    }
 
 }
 
@@ -82,7 +85,7 @@ $footer_nav_background_color: #323232;
         
     }
 
-    /*@include tablet_spacing; */
+    @include tablet_spacing; 
 }
 
 /*Desktop*/
@@ -246,4 +249,29 @@ h2 {
     font-size: 25px;
     margin-top: 30px;
 }
+
+.footer__bandsite__label {
+    color: white;
+    display: flex;
+    font-family: Avenir;
+    
+    
+}
+
+
+.footer__copyright{
+    color: white;
+    font-family: Avenir;
+}
+
+.footer__header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 36px, 0;
+    margin-right:50%;
+}
+
+
+
 
