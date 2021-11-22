@@ -115,14 +115,11 @@ $footer_nav_background_color: #323232;
         padding-left: 30px; 
         font-size: 2rem;   
     }
+    
 }
 
 /*tablet*/
-@media (min-width: 768px) and (max-width: 1279px){
-    body{
-        background:lightgreen;
-    }
-    
+@media (min-width: 768px) and (max-width: 1279px){    
     .footer__bandsite__label { 
         display: none; 
     } 
@@ -136,8 +133,6 @@ $footer_nav_background_color: #323232;
     }
 
     .footer__bandsite__label--desktop-tablet {
-        
-        color:pink;
         font-family: Avenir;
     }
 
@@ -204,6 +199,22 @@ $footer_nav_background_color: #323232;
         font-weight: lighter;
         padding-left: 30px; 
         font-size: 2rem;   
+    }
+
+    .footer {
+        background-color: $footer_nav_background_color;
+        margin:16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer_text {
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: Avenir;
+        font-size: 0.5rem;
+        padding-left: 36px;
     }
 
    /* @include tablet_spacing; */
@@ -303,10 +314,9 @@ $footer_nav_background_color: #323232;
         padding-left: 30px; 
         font-size: 2rem;   
     }
- 
+
+
 }
-
-
 
 .hero {
     background: url("../Assets/Images/hero-bio.jpg");
@@ -378,11 +388,12 @@ h2 {
     font-family: Avenir;
 }
 
-
 .footer {
     background-color: $footer_nav_background_color;
     margin:auto;
+    
 }
+
 
 .footer_heading {
     color: white;
@@ -397,7 +408,6 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     font-family: Avenir;
-    
     font-size: 1.7rem;
 }
 
@@ -412,6 +422,3 @@ h2 {
 .footer__copyright__text {
     padding-left: 60px;
 }
-
-
-
