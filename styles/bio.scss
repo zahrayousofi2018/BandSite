@@ -102,13 +102,14 @@ $footer_nav_background_color: #323232;
         font-family: Avenir;
         padding-left: 30px;
         align-items: center;
+
     }
 
-    .bandsite_nav_text {
+    /*.bandsite_nav_text {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-    }
+    }*/
     
     .bandsite_nav_content  {
         font-family: Avenir;
@@ -116,7 +117,12 @@ $footer_nav_background_color: #323232;
         padding-left: 30px; 
         font-size: 2rem;   
     }
-    
+
+    .bandsite__nav__text__container {
+        display: flex;
+        justify-content: center;
+    }
+ 
 }
 
 /*tablet*/
@@ -221,6 +227,7 @@ $footer_nav_background_color: #323232;
         padding-left: 36px;
     }
 
+  
     @include tablet_spacing; 
 }
 
@@ -425,3 +432,19 @@ h2 {
 .footer__copyright__text {
     padding-left: 60px;
 }
+
+.bandsite_nav a {
+    color:white;
+    font-family: Avenir;
+    font-weight:bold;
+}
+
+.bandsite_nav a:hover {
+    text-decoration: underline;
+    border-bottom-width: 1px;
+    text-decoration-color: white;
+}
+
+
+
+/*        <h5 class="bandsite_nav_text">Biography</h5> */
