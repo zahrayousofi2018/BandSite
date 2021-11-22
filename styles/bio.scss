@@ -5,9 +5,9 @@ body{
 
 $footer_nav_background_color: #323232;
 
-/*@mixin tablet_spacing {
+@mixin tablet_spacing {
     padding:36px 0;    
-}*/
+}
 
 /*Mobile*/
 
@@ -76,16 +76,19 @@ $footer_nav_background_color: #323232;
         font-size: 30px;
         margin-left: 16px;
         margin-right:16px;
+        font-family: Avenir;
     }
     
     .bees_knees_container {
         display:flex;
         flex-direction: column;
+        font-family: Avenir;
     }
 
     .musician_text {
         padding-left:16px;
         font-size: 25px;
+        font-family: Avenir;
     }
 
     .bees_knees_text_header {
@@ -96,8 +99,6 @@ $footer_nav_background_color: #323232;
     .bandsite_nav {
         background-color: $footer_nav_background_color;
         color: white;
-        /*display: flex;
-        justify-content: flex-start;*/
         font-family: Avenir;
         padding-left: 30px;
         align-items: center;
@@ -156,6 +157,7 @@ $footer_nav_background_color: #323232;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
+        font-family: Avenir;
     }
     
     .bees_knees_text_content {
@@ -165,11 +167,13 @@ $footer_nav_background_color: #323232;
         margin-left:36px;
         font-size: 25px;
         margin-top: 30px;
+        font-family: Avenir;
     }
     
     .musician_text {
         padding-left: 150px;
         font-size: 25px;
+        font-family: Avenir;
     }
 
     .bees_knees_text_header {
@@ -204,8 +208,8 @@ $footer_nav_background_color: #323232;
     .footer {
         background-color: $footer_nav_background_color;
         margin:16px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
 
     .footer_text {
@@ -217,7 +221,7 @@ $footer_nav_background_color: #323232;
         padding-left: 36px;
     }
 
-   /* @include tablet_spacing; */
+    @include tablet_spacing; 
 }
 
 /*Desktop*/
@@ -279,6 +283,7 @@ $footer_nav_background_color: #323232;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
+        font-family: Avenir;
     }
     
     .bees_knees_text_content {
@@ -288,10 +293,12 @@ $footer_nav_background_color: #323232;
         margin-left:36px;
         font-size: 25px;
         margin-top: 30px;
+        font-family: Avenir;
     }
     .musician_text {
         padding-left: 150px;
         font-size: 25px;
+        font-family: Avenir;
     }
 
     .bees_knees_text_header {
@@ -314,8 +321,6 @@ $footer_nav_background_color: #323232;
         padding-left: 30px; 
         font-size: 2rem;   
     }
-
-
 }
 
 .hero {
@@ -391,7 +396,6 @@ h2 {
 .footer {
     background-color: $footer_nav_background_color;
     margin:auto;
-    
 }
 
 
@@ -416,7 +420,6 @@ h2 {
     font-family: Avenir;
     padding-bottom: 5%;
     font-size:1.7rem;
-    
 }
 
 .footer__copyright__text {
