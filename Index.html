@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/bio.css" rel="stylesheet">
     <link href="styles/shows.css" rel="stylesheet">
-    <script src="index-pages.js"></script>
+   
     <title>Document</title>
 </head>
 <body>
@@ -84,6 +84,23 @@
         </div>
     </section>
 
+    <div> 
+        <p class="form_header">Join the Conversation </p>
+        <form id="form" action="/" method="GET">
+          <div class="form_name" >
+          <label for="name">NAME</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form_comment">
+          <label>COMMENT</label>
+          <input type="text" name="comment" required>
+        </div>
+          <button type="submit">COMMENT</button>
+
+        </form>
+
+    </div>
+
     <footer class="footer">
        <div class="footer__header">
          <div class="footer_heading">    
@@ -142,5 +159,7 @@
                <p class="footer__copyright__text"> Copyright The Bees Knees © 2021 All Rights Reserved </p>
              </div>
     </footer>
+    
  </body>
+ <script src="index-pages.js"></script>
 </html>
