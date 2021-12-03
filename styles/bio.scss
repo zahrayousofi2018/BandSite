@@ -6,7 +6,7 @@ body{
 $footer_nav_background_color: #323232;
 
 @mixin tablet_spacing {
-    padding:36px 0;    
+    padding: 36px 0px; 
 }
 
 /*Mobile*/
@@ -117,27 +117,28 @@ $footer_nav_background_color: #323232;
         display: flex;
         justify-content: center;
         width: 50%;
-
     }
- 
 }
 
 /*tablet*/
-@media (min-width: 768px) and (max-width: 1279px){    
+@media (min-width: 768px) and (max-width: 1279px){ 
+     
     .footer__bandsite__label { 
         display: none; 
+        @include tablet_spacing;  
     } 
 
     .footer__header {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 36px, 0;
         margin-right:20%;
+        @include tablet_spacing;  
     }
 
     .footer__bandsite__label--desktop-tablet {
         font-family: Avenir;
+       
     }
 
     .photo_gallery_images {
@@ -225,9 +226,7 @@ $footer_nav_background_color: #323232;
         font-size: 0.5rem;
         padding-left: 36px;
     }
-
-  
-    @include tablet_spacing; 
+    
 }
 
 /*Desktop*/
@@ -370,7 +369,6 @@ $footer_nav_background_color: #323232;
 }
 
 
-
 .photo_gallery_text {
     color: black;
     padding-left: 80px;
@@ -445,12 +443,21 @@ h2 {
     text-decoration-color: white;
 }
 
-#form{
-    background-color: burlywood;
+.profile_image img{
+    border-radius: 50px 50px;
+    width: 60px;
+    height: 60px;
 }
+
+
 
 .form_header {
     color: black;
     font-size: 50%;
 }
 
+.form_text {
+    font-style: Avenir;
+    
+
+}
