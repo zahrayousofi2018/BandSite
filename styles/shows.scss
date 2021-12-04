@@ -21,6 +21,25 @@ h3 {
 .concert {
     margin: 200px;
     font-family: Avenir;
+    display:flex;
 }
 
+.concert__header {
+    color:black;
+    font-size: 3rem;
+}
 
+.venue_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.concert_text {
+    font-size:1.5rem;
+    color:grey;
+}
+
+.column {
+    flex: 1;
+    
+}

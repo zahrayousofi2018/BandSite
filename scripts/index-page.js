@@ -1,4 +1,5 @@
-const name = document.getElementById('name')
+
+/*const name = document.getElementById('name')
 const comment = document.getElementById('comment')
 const submit = document.getElementById('submit')
 const form = document.getElementById('form')
@@ -10,7 +11,20 @@ form.addEventListener('submit', function(event) {
     console.log(event.target.name.value);
     console.log(event.target.comment.value);
     console.log(event.target.submit.value);
-}) 
+}) */
+
+const submitButtom =document.querySelector('#submit');
+
+submitButton.addEventListner('click', (event) => {
+    event.preventDefault();
+    const textFromInput = document.querySelector('#input').value;
+    const commentElement = document.createElement('p');
+    commentElement.innerText =textFromInput;
+    const commentSection = document.querySelector('#comments');
+    commentSection.appendChild(commentElement)
+
+})
+
 
 
 
