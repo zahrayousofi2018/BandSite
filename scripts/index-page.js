@@ -10,8 +10,8 @@ form.addEventListener('submit', function(event) {
     console.log(event.target.name.value);
     console.log(event.target.comment.value);
     console.log(event.target.submit.value);
-});
-}
+}) 
+
 
 
 
