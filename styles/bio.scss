@@ -104,7 +104,6 @@ $footer_nav_background_color: #323232;
         align-items: center;
         font-weight: bold;
     }
-
     
     .bandsite_nav_content  {
         font-family: Avenir;
@@ -455,7 +454,6 @@ h2 {
 }
 
 
-
 h4 {
     color: black;
     font-size: 50%;
@@ -562,4 +560,14 @@ textarea {
     font-size: 2rem;
     padding: 10px 20px;
     margin-top: 10px;
+}
+
+
+.form__comment__section {
+    display:flex;
+}
+
+
+.form__submissions {
+    color:white;
 }
