@@ -13,7 +13,7 @@ form.addEventListener('submit', function(event) {
     console.log(event.target.submit.value);
 }) */
 
-const submitButtom =document.querySelector('#submit');
+const submitButtom =document.querySelector('#name');
 
 submitButton.addEventListner('click', (event) => {
     event.preventDefault();

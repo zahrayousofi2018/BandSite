@@ -14,30 +14,44 @@ const dataFromServer = [
 const columnFirst = document.querySelector('#column-first');
 const columnSecond = document.querySelector('#column-second');
 const columnThird = document.querySelector('#column-third');
+const columnFourth = document.querySelector('#column-fourth')
 
-dataFromServer.forEach((object)=> {
+
+dataFromServer.forEach((object)=> { 
+    let row = document.createElement('div');
+    row.classList.add('dataRow')
     let dateData = document.createElement('p');
     dateData.innerText= object.date;
     dateData.classList.add('date_list')
+    row.appendChild(dateData)
     columnFirst.appendChild(dateData);
+
 
     let venueData = document.createElement('p');
     venueData.innerText=object.venue;
     venueData.classList.add('venue_list')
+    row.appendChild(venueData)
     columnSecond.appendChild(venueData);
 
     let locationData = document.createElement('p');
     locationData.innerText=object.location;
     locationData.classList.add('location_list')
+    row.appendChild(locationData)
     columnThird.appendChild(locationData);
+
+    let ticketButton = document.createElement('button');
+    ticketButton.innerText='Buy Ticket';
+    ticketButton.classList.add('ticket_button')
+    columnFourth.appendChild(ticketButton);
+    
 })
 
 
-console.log(div);
+
 
 var container = document.getElementById('container');
 container.appendChild(div);
-
+container.appendChild(row)
 
 /*
 var div = document.createElement('div');

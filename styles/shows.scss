@@ -18,15 +18,24 @@ h3 {
     font-size: 2.3rem;
 }
 
+.song {
+    margin:36px;
+}
+
 .concert {
-    margin: 200px;
+    margin: auto;
     font-family: Avenir;
     display:flex;
+    padding-left: 36px;
+    padding-right: 36px;
 }
 
 .concert__header {
     color:black;
-    font-size: 3rem;
+    font-size: 4rem;
+    padding-left:36px;
+    font-family: Avenir;
+    font-weight: bold;
 }
 
 .venue_list {
@@ -35,11 +44,43 @@ h3 {
 }
 
 .concert_text {
-    font-size:1.5rem;
+    font-size:2.5rem;
     color:grey;
 }
 
 .column {
     flex: 1;
+
+}
+
+.ticket_button {
+    background-color:#323232;
+    font-family: Avenir;
+    color:white;
+    font-size: 2.3rem;
+    padding-bottom:5px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right:50px;
+    text-align: center;
+    font-weight:bold;
+
+}
+
+.date_list {
+    font-size:2.3rem;
+    font-weight: bold;
+}
+
+.venue_list{
+    font-size:2.3rem;
+}
+
+.location_list {
+    font-size:2.3rem;
+}
+
+.dataRow {
+    border-bottom:  2px lightgrey;
     
 }
