@@ -443,8 +443,15 @@ h2 {
     text-decoration-color: white;
 }
 
-.profile_image img{
-    border-radius: 30px 30px;
+.profile__image {
+    border-radius:50%;
+    
+    
+}
+
+.name {
+    font-family: Avenir;
+    
 }
 
 
@@ -462,16 +469,55 @@ h4 {
     padding-right: 350px;
 }
 
-.form_text {
+.form__text {
     font-family: Avenir;
+    font-size: 2rem;
     
+}
+
+.form_layout {
+    display:flex;
+}
+
+.form__name {
+    font-family: Avenir;
+    font-weight: bold;
+    color: #AFAFAF;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.form__comment {
+    font-family: Avenir;
+    font-weight: bold;
+    color: #AFAFAF;
+    // display:flex;
+    // justify-content: flex-start;
+    padding-left: 98px;
+}
+
+#form__comment__image{
+    display:none;
+}
+
+.form__heading {
+    font-family: Avenir;
+    font-size: 2rem;
+}
+
+.form__heading__div {
+    display:flex;
 }
 
 .comment{
     background-color: #323232;
     color: white;
-    text-align: center;
-    margin-left: 82%;
+    text-align: center; 
+}
+
+.form__comment__text{
+    padding-left: 10px;
+    padding-bottom:20px;
 }
 
 h4 {
@@ -481,10 +527,39 @@ h4 {
 
 input {
     width: 90%;
-    padding: 12px 20px;
+    padding: 15px 75px;
+    font-family: Avenir;
+    padding-right:auto;
+    background-color:#FAFAFA;
+    margin-left: 10px;
 }
 
 textarea {
     width:90%;
-    padding:24px 20px;
+    // padding:24px 60px;
+    // padding: 15px 60px;
+    font-family: Avenir;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top:30px;
+    padding-bottom:60px;
+    background-color: #FAFAFA;
+    margin-top:25px;
+    margin-left:10px;
+}
+
+.form__header {
+    padding-left: 36px;
+    font-size: 4rem;
+    font-family:Avenir;
+}
+
+
+#submit {
+    margin-left:65%;
+    color:white;
+    background-color:#323232;
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin-top: 10px;
 }

@@ -47,8 +47,6 @@ dataFromServer.forEach((object)=> {
 })
 
 
-
-
 var container = document.getElementById('container');
 container.appendChild(div);
 container.appendChild(row)
