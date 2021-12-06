@@ -1,25 +1,51 @@
-
-.hero_shows {
+.hero__shows {
         background: url("../Assets/Images/hero-shows.jpg");
         font-family: Avenir;
-        padding: 200px 0;
+        padding: 36px 0;
         background-size: auto;
         background-size: cover;
         background-repeat: no-repeat; 
-        opacity: 87%;
+        opacity:50% #323232;
         margin-bottom: 24px;
         margin:auto;
-        height:auto;    
+        height:auto;   
+
+}
+
+.hero__text {
+      font-size: 60px;
+      line-height: 68px;
+      font-weight: bold;
+      @media (max-width:767px){
+          font-size:40px;
+          line-height: 32px;
+          font-weight:bold;
+          padding-left:16px;
+
+}
+}
+
+.hero__song {
+    padding-left: 36px;
+    width:"30%";
+    height:"200px";
+    @media (max-width:767px){
+        padding-left:16px;
+        padding-right:16px;
+        margin:16px;
+        width:90%;
+        height:200px;
+ }
 }
 
 h3 {
     color: white;
     padding: 36px;
-    font-size: 2.3rem;
-}
-
-.song {
-    margin:36px;
+    font-size: 60px;
+    @media (max-width:767px){
+        font-size:1.5rem;
+        color:white; 
+    }
 }
 
 .concert {
@@ -28,6 +54,11 @@ h3 {
     display:flex;
     padding-left: 36px;
     padding-right: 36px;
+    @media (max-width:767px){
+    display:flex;
+    flex-direction: column;
+ 
+    }
 }
 
 .concert__header {
@@ -81,10 +112,7 @@ h3 {
 }
 
 .dataRow {
-    border-bottom:  2px lightgrey;
-    
+    border-bottom:  2px lightgrey; 
 }
 
-.hero__song {
-    padding-left: 36px;
-}
+

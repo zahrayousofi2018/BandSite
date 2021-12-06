@@ -43,9 +43,7 @@ dataFromServer.forEach((object)=> {
     ticketButton.innerText='Buy Ticket';
     ticketButton.classList.add('ticket_button')
     columnFourth.appendChild(ticketButton);
-    
 })
-
 
 var container = document.getElementById('container');
 container.appendChild(div);
