@@ -7,7 +7,6 @@ submitButton.addEventListener('click', (event) => {
     event.preventDefault();
 
     const textFromInput = document.querySelector('#input').value;
-    // const textFromInput =document.querySelector('#opinion').value;
     if (textFromInput.length < 10) {
         const formElement = document.querySelector('#form');
         formElement.classList.add('error');
@@ -16,10 +15,8 @@ submitButton.addEventListener('click', (event) => {
     }
      const commentElement = document.createElement('p');
      commentElement.innerText = textFromInput;
-    //  commentElement.innerText = textFromOpinion;
      const commentSection = document.querySelector('#comments');
      commentSection.appendChild(commentElement);
-    //  formContainerDiv.removeChild(errorMessageElement)
     
 })
 
@@ -28,7 +25,6 @@ submitButton.addEventListener('click', (event) => {
         const formElement = document.querySelector('#form');
         formElement.classList.add('error');
         formContainerDiv.appendChild(errorMessageElement);
-        // return;
 }
     const commentElement = document.createElement('p');
     commentElement.innerText =textFromOpinion;
