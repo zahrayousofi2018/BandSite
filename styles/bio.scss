@@ -35,7 +35,7 @@ $footer_nav_background_color: #323232;
         margin:auto;
     } 
 
-    .musician_image {
+    .musician__image {
         width: 650px;
         height:500px;
         display:flex;
@@ -71,7 +71,7 @@ $footer_nav_background_color: #323232;
         font-family: Avenir;
     }
     
-    .bees_knees_text_content {
+    .bees__knees__text__content {
         padding-left:16px;
         padding-right:16px;
         font-size: 30px;
@@ -80,19 +80,19 @@ $footer_nav_background_color: #323232;
         font-family: Avenir;
     }
     
-    .bees_knees_container {
+    .bees__knees__container {
         display:flex;
         flex-direction: column;
         font-family: Avenir;
     }
 
-    .musician_text {
+    .musician__text {
         padding-left:16px;
         font-size: 25px;
         font-family: Avenir;
     }
 
-    .bees_knees_text_header {
+    .bees__knees__text__header {
         padding-left: 16px;
         font-size: 3rem;
     }
@@ -157,14 +157,14 @@ $footer_nav_background_color: #323232;
         margin:auto;
     }
 
-    .bees_knees_container {
+    .bees__knees__container {
         display:flex;
         flex-direction: row;
         justify-content: space-around;
         font-family: Avenir;
     }
     
-    .bees_knees_text_content {
+    .bees__knees__text__content {
         padding-left:120px;
         padding-right:5px;
         margin-right: 36px;
@@ -174,18 +174,18 @@ $footer_nav_background_color: #323232;
         font-family: Avenir;
     }
     
-    .musician_text {
+    .musician__text {
         padding-left: 150px;
         font-size: 25px;
         font-family: Avenir;
     }
 
-    .bees_knees_text_header {
+    .bees__knees__text__header {
         padding-left: 150px;
         font-size: 3rem;
     }
 
-    .musician_image {
+    .musician__image {
         width: 850px;
         height:auto;
         display: flex;
@@ -274,7 +274,7 @@ $footer_nav_background_color: #323232;
         margin:16px; 
     }
 
-    .musician_image {
+    .musician__image {
         width: 1000px;
         height:auto;
         display: flex;
@@ -283,14 +283,14 @@ $footer_nav_background_color: #323232;
     }
 
 
-    .bees_knees_container {
+    .bees__knees__container {
         display:flex;
         flex-direction: row;
         justify-content: space-around;
         font-family: Avenir;
     }
     
-    .bees_knees_text_content {
+    .bees__knees__text__content {
         padding-left:120px;
         padding-right:5px;
         margin-right: 36px;
@@ -299,13 +299,13 @@ $footer_nav_background_color: #323232;
         margin-top: 30px;
         font-family: Avenir;
     }
-    .musician_text {
+    .musician__text {
         padding-left: 150px;
         font-size: 25px;
         font-family: Avenir;
     }
 
-    .bees_knees_text_header {
+    .bees__knees__text__header {
         padding-left: 150px;
         font-size: 3rem;
     }
