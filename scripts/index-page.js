@@ -2,7 +2,7 @@
 const submitButton =document.querySelector('#submit');
 const formContainerDiv =document.querySelector('#formContainer');
 const errorMessageElement = document.createElement('p');
-errorMessageElement.innerHTML ='your comment is too short';
+// errorMessageElement.innerHTML ='your comment is too short';
 submitButton.addEventListener('click', (event) => {
     event.preventDefault();
 
