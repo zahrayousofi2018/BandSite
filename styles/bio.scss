@@ -13,7 +13,7 @@ $footer_nav_background_color: #323232;
 
 @media (max-width:767px){
     .footer_text,
-    .photo_gallery_images{
+    .photo__gallery__images{
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -28,7 +28,7 @@ $footer_nav_background_color: #323232;
         background-repeat: no-repeat; 
     }
 
-    .photo_gallery_image {
+    .photo__gallery__image {
         width: 650px;
         height:500px;
         padding-bottom: 40px;
@@ -47,7 +47,7 @@ $footer_nav_background_color: #323232;
         margin:auto;
     }
 
-    .musician_header {
+    .musician__header {
         font-size: 4rem;
     }
 
@@ -97,7 +97,7 @@ $footer_nav_background_color: #323232;
         font-size: 3rem;
     }
 
-    .bandsite_nav {
+    .bandsite__nav {
         background-color: $footer_nav_background_color;
         color: white;
         font-family: Avenir;
@@ -106,7 +106,7 @@ $footer_nav_background_color: #323232;
         font-weight: bold;
     }
     
-    .bandsite_nav_content  {
+    .bandsite__nav__content  {
         font-family: Avenir;
         font-weight: lighter;
         padding-left: 30px; 
@@ -141,7 +141,7 @@ $footer_nav_background_color: #323232;
        
     }
 
-    .photo_gallery_images {
+    .photo__gallery__images {
         padding-left:24px;
         padding-right:24px;
         display: flex;
@@ -152,7 +152,7 @@ $footer_nav_background_color: #323232;
         margin:36px; 
     }
 
-    .photo_gallery_image {
+    .photo__gallery__image {
         padding-bottom: 30px;
         margin:auto;
     }
@@ -192,7 +192,7 @@ $footer_nav_background_color: #323232;
         justify-content: center;
     }
     
-    .bandsite_nav {
+    .bandsite__nav {
         background-color: $footer_nav_background_color;
         color: white;
         display: flex;
@@ -204,7 +204,7 @@ $footer_nav_background_color: #323232;
 
     }
     
-    .bandsite_nav_content  {
+    .bandsite__nav__content  {
         font-family: Avenir;
         font-weight: lighter;
         padding-left: 30px; 
@@ -231,7 +231,7 @@ $footer_nav_background_color: #323232;
 
 /*Desktop*/
 @media (min-width: 1280px ) { 
-    .photo_gallery_image{
+    .photo__gallery__image{
           width: 30%;
           padding-bottom: 40px;
           margin-bottom:2%;
@@ -263,7 +263,7 @@ $footer_nav_background_color: #323232;
         font-family: Avenir;
     }
 
-    .photo_gallery_images {
+    .photo__gallery__images {
         padding-left:36px;
         padding-right:36px;
         display: flex;
@@ -309,7 +309,7 @@ $footer_nav_background_color: #323232;
         padding-left: 150px;
         font-size: 3rem;
     }
-    .bandsite_nav {
+    .bandsite__nav {
         background-color: $footer_nav_background_color;
         color: white;
         display: flex;
@@ -321,7 +321,7 @@ $footer_nav_background_color: #323232;
 
     }
     
-    .bandsite_nav_content  {
+    .bandsite__nav__content  {
         font-family: Avenir;
         font-weight: lighter;
         padding-left: 30px; 
@@ -360,17 +360,17 @@ $footer_nav_background_color: #323232;
 }
 
 
-.musician_header {
+.musician__header {
     padding-left: 16px;
     font-size: 3.5rem;
 }
 
-.photo_gallery {
+.photo__gallery {
     background-color: #FAFAFA;
 }
 
 
-.photo_gallery_text {
+.photo__gallery__text {
     color: black;
     padding-left: 80px;
     padding-top:30px;
@@ -404,7 +404,7 @@ h2 {
 }
 
 
-.musician_header {
+.musician__header {
     color: black;
     font-family: Avenir;
 }
@@ -442,13 +442,13 @@ h2 {
     padding-left: 60px;
 }
 
-.bandsite_nav a {
+.bandsite__nav a {
     color:white;
     font-family: Avenir;
     font-weight:bold;
 }
 
-.bandsite_nav a:hover {
+.bandsite__nav a:hover {
     text-decoration: underline;
     border-bottom-width: 1px;
     text-decoration-color: white;
