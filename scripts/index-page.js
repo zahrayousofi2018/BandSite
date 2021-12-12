@@ -19,11 +19,12 @@ form.addEventListener('submit', (event) => {
      const nameElement = document.createElement('h4');
      nameElement.classList.add('form__heading');
      commentElement.classList.add('form__text');
+    //commentElement.getElementByID.add('form__comment__image');
      commentElement.innerText = textFromOpinion;
      nameElement.innerText = textFromInput;
      commentSection.appendChild(nameElement);
      commentSection.appendChild(commentElement);
-    
+     
 
 
     //  const textFromOpinion = document.querySelector('#opinion').value;
@@ -36,6 +37,12 @@ form.addEventListener('submit', (event) => {
     // commentElement.innerText = textFromOpinion; 
     // commentSection.appendChild(commentElement);
 })
+
+axios
+    .get('https://project-1-api.herokuapp.com/')
+    .then((result) => {
+    console.log(result.data);
+});
 
 
 
