@@ -104,19 +104,28 @@ $footer_nav_background_color: #323232;
         padding-left: 30px;
         align-items: center;
         font-weight: bold;
+        // display:flex;
+        // justify-content:space-evenly;
     }
     
+    // #bandsite__title {
+    //     display: none;
+    // }
+
     .bandsite__nav__content  {
         font-family: Avenir;
         font-weight: lighter;
         padding-left: 30px; 
         font-size: 2rem;   
+        // display:flex;
+        // justify-content: space-between;
     }
 
     .bandsite__nav__text__container {
-        display: flex;
-        justify-content: center;
-        width: 50%;
+        // display: flex;
+        // justify-content: center;
+        // // width: 100%;
+        display: inline-block;
     }
 }
 
