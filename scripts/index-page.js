@@ -52,11 +52,29 @@ let myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
 
 axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_key)
 .then(res => {
-  console.log(res.data[0].name)
-  console.log(res.data[0].comment)
-  console.log(res.data[1].name)
-  console.log(res.data[1].comment)
+  console.log(res)
+  // console.log(res.data[0].name)
+  // console.log(res.data[0].comment)
+  // console.log(res.data[1].name)
+  // console.log(res.data[1].comment)
+  // console.log(res.data[2].name)
+  // console.log(res.data[2].comment)
+
+  let form__heading = document.querySelector('.form__heading');
+  form__heading.innerText = res.data[0].name;
+  let form__text = document.querySelector('.form__text');
+  form__text.innerText = res.data[0].comment;
   
+  // let form__heading = document.querySelector('form__heading');
+  // form__heading.innerText = res.data[1].name;
+  // let form__text = document.querySelector('form__text');
+  // form__text = heading.innerText = res.data[1].comment;
+
+  // let form__heading = document.querySelector('form__heading');
+  // form__heading.innerText = res.data[2].name;
+  // let form__text = document.querySelector('form__text');
+  // form__text = heading.innerText = res.data[2].comment;
+
 }); 
 
 
