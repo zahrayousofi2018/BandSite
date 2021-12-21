@@ -47,8 +47,14 @@ dataFromServer.forEach((object)=> {
 
 var container = document.getElementById('container');
 container.appendChild(div);
-container.appendChild(row)
+container.appendChild(row);
 
+
+
+
+
+axios.get('https://project-1-api.herokuapp.com/showdates?api_key='+ myApiKey.api_key)
+  .then(res => console.log(res));
 
 
 
