@@ -19,8 +19,10 @@ form.addEventListener('submit', (event) => {
      commentElement.classList.add('form__text');
      commentElement.innerText = textFromOpinion;
      nameElement.innerText = textFromInput;
-     commentSection.appendChild(nameElement);
-     commentSection.appendChild(commentElement);
+     commentSection.prepend(commentElement);
+     commentSection.prepend(nameElement);
+    
+     
      
 
     if(textFromOpinion.length <20) {
@@ -49,7 +51,7 @@ let myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
 
 axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_key)
 .then(res => {
-  console.log(res)
+  console.log(res);
   // console.log(res.data[0].name)
  
   // let form__heading = document.querySelector('.form__heading');
@@ -70,27 +72,36 @@ axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_
   let comments__container = document.querySelector('#comments');
 
   for (i=0; i< res.data.length; i++) {
-  
+    let profile__image = document.createElement('img');
+    console.log(profile__image);
+    profile__image.src = "Assets/Images/Grey.png";
+    
+    profile__image.classList.add('.profile__image');
+    profile__image.style.width ="48px";
+    profile__image.style.height ="48px";
+    profile__image.style.borderRadius ="50%"
+    
+
     let form__heading=document.createElement('h4');
     form__heading.classList.add('.form__heading');
     form__heading.innerText = res.data[i].name;
+    form__heading.appendChild(profile__image);
+
     let form__text= document.createElement('p');
     form__text.classList.add('.form__text');
     form__text.innerText = res.data[i].comment;
     comments__container.appendChild(form__heading);
     comments__container.appendChild(form__text);
-    // form__heading.appendChild(profile__image);
-    // document.getElementById('profile__image').appendChild(image);
-    let profile__image = document.createElement('profile__image');
-    profile__image.src = "./assets/Images/Grey.png";
-    profile__image.classList.add('.profile__image');
-    comments__container.appendChild(profile__image);
-
-
-    
+    form__text.style.fontFamily = 'Avenir';
+    form__text.style.fontSize ='14px';
+    form__text.style.padding= '16px';
+    form__heading.style.padding= '16px';
+     
   }
+  
 
 }); 
+
 
 
 //posting new comment to axios 
@@ -121,6 +132,6 @@ function comments__container (Name, Comment) {
 }
 
 
-  
-
+axios.get('https://project-1-api.herokuapp.com/showdates?api_key='+ myApiKey.api_key)
+  .then(res => console.log(res));
 

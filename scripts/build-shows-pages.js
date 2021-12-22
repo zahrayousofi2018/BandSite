@@ -50,11 +50,19 @@ container.appendChild(div);
 container.appendChild(row);
 
 
+// };
+
+// axios.get('https://project-1-api.herokuapp.com/register')
+// .then(response => {
+//  console.log(response);
+//   });
+ 
+// let myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
 
 
+// axios.get('https://project-1-api.herokuapp.com/showdates?api_key='+ myApiKey.api_key)
+//   .then(res => console.log(res));
 
-axios.get('https://project-1-api.herokuapp.com/showdates?api_key='+ myApiKey.api_key)
-  .then(res => console.log(res));
-
+//   console.log(res.data[0].name)
 
 
