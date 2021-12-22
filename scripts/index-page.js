@@ -63,13 +63,14 @@ axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_
     profile__image.classList.add('.profile__image');
     profile__image.style.width ="48px";
     profile__image.style.height ="48px";
-    profile__image.style.borderRadius ="50%"
+    profile__image.style.borderRadius ="50%";
+    profile__image.style.marginLeft ="48px";
     
-
     let form__heading=document.createElement('h4');
     form__heading.classList.add('.form__heading');
     form__heading.innerText = res.data[i].name;
-    form__heading.appendChild(profile__image);
+    form__heading.prepend(profile__image);
+
 
     let form__text= document.createElement('p');
     form__text.classList.add('.form__text');
@@ -78,12 +79,14 @@ axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_
     comments__container.appendChild(form__text);
     form__text.style.fontFamily = 'Avenir';
     form__text.style.fontSize ='14px';
-    form__text.style.paddingLeft= '48px';
-    form__heading.style.paddingLeft= '48px';
-    form__text.style.paddingRight= '48px';
+    form__text.style.paddingLeft= '180px';
+    form__heading.style.paddingLeft= '78px';
+    form__heading.style.fontSize="24px"
+    form__text.style.paddingRight= '78px';
     form__heading.style.paddingRight= '48px';
     form__text.style.margin = "48px";
     form__heading.style.margin ="48px";
+    
     
   }
   
