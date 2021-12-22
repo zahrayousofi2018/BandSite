@@ -13,24 +13,26 @@ form.addEventListener('submit', (event) => {
         formContainerDiv.appendChild(errorMessageElement);
         return;
     }
+
      const commentElement = document.createElement('p');
      const nameElement = document.createElement('h4');
      nameElement.classList.add('form__heading');
      commentElement.classList.add('form__text');
      commentElement.innerText = textFromOpinion;
      nameElement.innerText = textFromInput;
+     
      commentSection.prepend(commentElement);
      commentSection.prepend(nameElement);
     
      
-     let profile__image = document.createElement('img');
-     console.log(profile__image);
-     profile__image.src = "Assets/Images/Grey.png";
+    //  let profile__image = document.createElement('img');
+    //  console.log(profile__image);
+    //  profile__image.src = "Assets/Images/Grey.png";
      
-     profile__image.classList.add('.profile__image');
-     profile__image.style.width ="48px";
-     profile__image.style.height ="48px";
-     profile__image.style.borderRadius ="50%";
+    //  profile__image.classList.add('.profile__image');
+    //  profile__image.style.width ="48px";
+    //  profile__image.style.height ="48px";
+    //  profile__image.style.borderRadius ="50%";
     
      
 
@@ -81,7 +83,7 @@ axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_
     form__text.style.fontSize ='14px';
     form__text.style.paddingLeft= '180px';
     form__heading.style.paddingLeft= '78px';
-    form__heading.style.fontSize="24px"
+    form__heading.style.fontSize="30px"
     form__text.style.paddingRight= '78px';
     form__heading.style.paddingRight= '48px';
     form__text.style.margin = "48px";
