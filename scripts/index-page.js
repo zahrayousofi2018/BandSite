@@ -79,15 +79,15 @@ axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_
     form__text.innerText = res.data[i].comment;
     comments__container.appendChild(form__heading);
     comments__container.appendChild(form__text);
-    form__text.style.fontFamily = 'Avenir';
-    form__text.style.fontSize ='14px';
-    form__text.style.paddingLeft= '180px';
-    form__heading.style.paddingLeft= '78px';
-    form__heading.style.fontSize="30px"
-    form__text.style.paddingRight= '78px';
-    form__heading.style.paddingRight= '48px';
-    form__text.style.margin = "48px";
-    form__heading.style.margin ="48px";
+    // form__text.style.fontFamily = 'Avenir';
+    // form__text.style.fontSize ='14px';
+    // form__text.style.paddingLeft= '180px';
+    // form__heading.style.paddingLeft= '78px';
+    // form__heading.style.fontSize="30px"
+    // form__text.style.paddingRight= '78px';
+    // form__heading.style.paddingRight= '48px';
+    // form__text.style.margin = "48px";
+    // form__heading.style.margin ="48px";
     
     
   }

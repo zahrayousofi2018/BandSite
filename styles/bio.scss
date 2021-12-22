@@ -12,7 +12,7 @@ $footer_nav_background_color: #323232;
 /*Mobile*/
 
 @media (max-width:767px){
-    .footer_text,
+    
     .photo__gallery__images{
         display:flex;
         flex-direction: column;
@@ -23,30 +23,32 @@ $footer_nav_background_color: #323232;
         
     }
 
-    .hero {
-        background-size:auto;
-        background-size: cover;
-        background-repeat: no-repeat; 
-    }
+    // .hero {
+    //     background-size:auto;
+    //     background-size: cover;
+    //     background-repeat: no-repeat; 
+    //     padding: 150px 0;
+    // }
 
     .photo__gallery__image {
-        // width: 650px;
-        // height:500px;
+        width: 450px;
+        height:280px;
         padding-bottom: 40px;
         margin:auto;
         background-size: cover;
     } 
 
     .musician__image {
-        width: 650px;
-        height:500px;
+        width:500px;
+        height:280px;
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-left:16px;
-        padding-right:16px;
+        // padding-left:16px;
+        // padding-right:16px;
         padding-bottom:40px;
         margin:auto;
+        background: cover;
     }
 
    
@@ -68,14 +70,16 @@ $footer_nav_background_color: #323232;
     .footer__bandsite__label {
         color: white;
         font-family: Avenir;
+        font-size: 24px;
+        padding-left:16px;
     }
     
     .bees__knees__text__content {
         padding-left:16px;
         padding-right:16px;
-        font-size: 30px;
-        margin-left: 16px;
-        margin-right:16px;
+        font-size: 14px;
+        // margin-left: 16px;
+        // margin-right:16px;
         font-family: Avenir;
     }
     
@@ -85,15 +89,12 @@ $footer_nav_background_color: #323232;
         font-family: Avenir;
     }
 
-    .musician__text {
-        padding-left:16px;
-        font-size: 25px;
-        font-family: Avenir;
-    }
+   
 
     .bees__knees__text__header {
         padding-left: 16px;
-        font-size: 3rem;
+        font-size: 24px;
+        font-family: Avenir;
     }
 
     .bandsite__nav {
@@ -182,11 +183,7 @@ $footer_nav_background_color: #323232;
         font-family: Avenir;
     }
     
-    .musician__text {
-        padding-left: 150px;
-        font-size: 25px;
-        font-family: Avenir;
-    }
+    
 
     .bees__knees__text__header {
         padding-left: 150px;
@@ -307,11 +304,7 @@ $footer_nav_background_color: #323232;
         margin-top: 30px;
         font-family: Avenir;
     }
-    .musician__text {
-        padding-left: 150px;
-        font-size: 25px;
-        font-family: Avenir;
-    }
+   
 
     .bees__knees__text__header {
         padding-left: 150px;
@@ -337,18 +330,7 @@ $footer_nav_background_color: #323232;
     }
 }
 
-.hero {
-    background: url("../Assets/Images/hero-bio.jpg");
-    font-family: Avenir;
-    padding: 200px 0;
-    background-size: auto;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    opacity: 87%;
-    margin-bottom: 24px;
-    margin:auto;
-    height:auto;    
-}
+
 
 
 .hero_text {
@@ -439,6 +421,10 @@ h2 {
 
 .footer__copyright__text {
     padding-left: 60px;
+    @media (max-width:767px){
+    padding-left:16px;
+    font-size: 14px;
+}
 }
 
 .bandsite__nav a {
@@ -660,3 +646,63 @@ textarea {
 }
 }
 
+.hero {
+    background: url("../Assets/Images/hero-bio.jpg");
+    font-family: Avenir;
+    padding: 200px 0;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: black;
+    filter: alpha(opacity=50);
+    margin-bottom: 24px;
+    margin:auto;
+    height:auto;  
+    
+    @media(max-width:767px){
+        padding: 100px 0;
+    }
+    
+    @media (min-width: 1280px ) { 
+        
+
+    }  
+}
+
+.musician__text {
+    @media(max-width:767px){
+    padding-left:16px;
+    font-size: 14px;
+    font-family: Avenir;
+}
+}
+
+@media (min-width: 1280px ) { 
+    
+
+.musician__text {
+    padding-left: 150px;
+    font-size: 14px;
+    font-family: Avenir;
+} 
+
+
+.musician__text {
+    padding-left: 150px;
+    font-size: 25px;
+    font-family: Avenir;
+
+}
+
+} 
+
+.footer_text {
+    @media(max-width:767px){
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px; 
+    font-size:14px;
+}
+}
