@@ -111,7 +111,7 @@ axios.get('https://project-1-api.herokuapp.com/comments?api_key='+ myApiKey.api_
 
   const newComment = axios.post('https://project-1-api.herokuapp.com/comments?api_key=api', {
     name: Name,
-    comment: Comment
+    comment: Comment,
   });
    
   newComment.then(results => {
