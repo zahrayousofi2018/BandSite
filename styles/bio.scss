@@ -62,7 +62,6 @@ $footer_nav_background_color: #323232;
 
     #bandsite__hidden__title {
         background-color: $footer_nav_background_color;
-        padding:10px;
         font-family:Avenir;
         display: flex;
         justify-content: center;
@@ -457,12 +456,15 @@ h2 {
     color:white;
     font-family: Avenir;
     font-weight:bold;
+    padding: 14px 25px;
+    font-size: 24px;
 }
 
 .bandsite__nav a:hover {
     text-decoration: underline;
     border-bottom-width: 1px;
     text-decoration-color: white;
+    
 }
 
 .profile__image {
@@ -713,12 +715,7 @@ textarea {
 } 
 
 
-.musician__text {
-    padding-left: 150px;
-    font-size: 25px;
-    font-family: Avenir;
 
-}
 
 } 
 
